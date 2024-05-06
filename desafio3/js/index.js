@@ -9,8 +9,8 @@ precioFinalSinDescuento = precioUnitario * cantidadDeseada
 
 if(cantidadDeseada >= 5) {
    
-    precioFinalConDescuento = precioFinalSinDescuento * 0.1 
+    precioFinalSinDescuento = precioFinalSinDescuento - precioFinalSinDescuento * 0.1 
 }
 
 
-alert(`el total de su compra de ${cantidadDeseada} ${nombreProducto} es de $${precioFinalConDescuento} `)
+alert(`el total de su compra de ${cantidadDeseada} ${nombreProducto} es de $${precioFinalSinDescuento} `)
